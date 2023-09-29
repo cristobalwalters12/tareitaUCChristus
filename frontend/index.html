@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="text-center mb-5">Datos de la API</h1>
+      <div class="text-center mb-5">
+        <form id="patientForm">
+          <label for="add_email">Email:</label>
+          <input type="email" id="add_email" name="add_email" required />
+          <label for="add_first_name">Nombre:</label>
+          <input type="text" id="first_name" name="add_first_name" required />
+          <label for="add_last_name">Apellido:</label>
+          <input type="text" id="last_name" name="add_last_name" required />
+          <label for="add_phone">Teléfono:</label>
+          <input type="text" id="phone" name="add_phone" required />
+          <label for="add_plan_salud">Plan de Salud:</label>
+          <input type="text" id="plan_salud" name="add_plan_salud" required />
+          <label for="add_gender">Género:</label>
+          <input type="text" id="gender" name="add_gender" required />
+          <button type="button" onclick="submitForm()">Enviar</button>
+        </form>
+      </div>
+
+      <div class="text-center mb-5">
+        <label for="email">Buscar por Email:</label>
+        <input type="email" id="search_email" name="email" />
+        <button onclick="searchByEmail()">Buscar</button>
+      </div>
+      <div class="container">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">correo</th>
+              <th scope="col">nombre</th>
+              <th scope="col">apellido</th>
+              <th scope="col">celular</th>
+              <th scope="col">plan_salud</th>
+              <th scope="col">genero</th>
+            </tr>
+          </thead>
+          <tbody id="table_body"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="./assets/script/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
