@@ -24,10 +24,28 @@
 ```
 Se creara la base de datos con nombre de miBaseDatos.db(considerar que la base de datos ya viene creada, si se vuelve a crear se sobreescribe y se agregan mas columnas)
 
-4. **Iniciar servidor:**
+4. **inyectar datos a la base de datos:** se debe ejecutar desde la consola
+   
+```sh
+   node injectToDb.js
+```
+los datos que se agregaran a la db seran 
+   ```json
+[
+  {
+    "email": "john.doe@example.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone": "1234567890",
+    "plan_salud": "Plan1",
+    "gender": "Male"
+  }
+]
+```
+   
+6. **Iniciar servidor:**
 ```sh
   node index.js
 ```
-5. **Abrir el Archivo index.html con Live Server:**
+6. **Abrir el Archivo index.html con Live Server:**
     tener instalado [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en Visual Studio Code, y luego abrir index.html con Live Server para visualizar la aplicación.
-  
