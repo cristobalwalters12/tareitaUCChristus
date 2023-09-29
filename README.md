@@ -22,7 +22,7 @@
 ```sh
   node dbSetup.js
 ```
-Se creara la base de datos con nombre de miBaseDatos.db(considerar que la base de datos ya viene creada, si se vuelve a crear se sobreescribe y se agregan mas columnas)
+Se creara la base de datos con nombre de miBaseDatos.db(considerar que la base de datos ya viene creada, si se vuelve a crear saldra error ya que el ID lo tengo puesto como PRIMARY KEY)
 
 4. **inyectar datos a la base de datos:** se debe ejecutar desde la consola
    
